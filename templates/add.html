@@ -26,14 +26,13 @@
 		<div class="collapse navbar-collapse" id="navbarScroll"> 
 		<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> 
 			<li class="nav-item"> 
-			<a class="nav-link active" aria-current="page" href="/">Home</a> 
+			<a class="nav-link active" aria-current="page" href="{{ url_for('hello_world') }}">Home</a> 
 			</li> 
 			<li class="nav-item"> 
-			<a class="nav-link" href="./about.html">About</a> 
+			<a class="nav-link" href="{{ url_for('about') }}">About</a> 
 			</li> 
-
 			<li class="nav-item"> 
-			<a class="nav-link" href="./add.html" tabindex="-1">Add</a> 
+			<a class="nav-link" href="{{ url_for('addpost') }}" tabindex="-1">Add</a> 
 			</li> 
 		</ul> 
 		<form class="d-flex"> 
@@ -63,7 +62,7 @@
 			<div class="form-group col-xs-12 floating-label-form-group controls"> 
 				<label>Author</label> 
 				<input type="text" class="form-control" placeholder="Author" name="author" id="author" required 
-				data-validation-required-message="Please enter your phone number."> 
+				data-validation-required-message="Please enter your name."> 
 				<p class="help-block text-danger"></p> 
 			</div> 
 			</div> 
